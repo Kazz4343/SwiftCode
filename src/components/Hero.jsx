@@ -39,9 +39,17 @@ const Hero = () => {
             <div className='max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative'>
               <div>
                 <div className='inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700'>
-                  <Sparkles />   {/*Start from here*/}
-                  <span>Introducing SwiftCode AI</span>
+                  <Sparkles className='w-4 h-4 text-blue-400'/>   {/*Start from here*/}
+                  <span className='text-xs sm:text-sm text-blue-300'>
+                    Introducing SwiftCode AI
+                  </span>
                 </div>
+
+                <h1 className='text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight'>
+                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>Code Faster, </span>
+                  <span className='bg-linear-to-r from-blue-400 via-cyan-400 to-blue-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>Better</span>
+                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>With SwiftCode</span>
+                </h1>
               </div>
               <div className='relative order-2 w-full'>
                 <div className='relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border-white/10'>
