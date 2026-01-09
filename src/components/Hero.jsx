@@ -1,4 +1,4 @@
-import { ChevronDown, Sparkle, Sparkles } from 'lucide-react';
+import { ArrowRight, ChevronDown, Play, Sparkle, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react'
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { codeSamples, floatingCards } from '../data/CodeMockup';
@@ -36,7 +36,7 @@ const Hero = () => {
 
 
           <div className='max-w-7xl mx-auto text-center relative w-full'>
-            <div className='max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative'>
+            <div className='max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative'>
               <div>
                 <div className='inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700'>
                   <Sparkles className='w-4 h-4 text-blue-400'/>   {/*Start from here*/}
@@ -45,11 +45,37 @@ const Hero = () => {
                   </span>
                 </div>
 
-                <h1 className='text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight'>
-                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>Code Faster, </span>
-                  <span className='bg-linear-to-r from-blue-400 via-cyan-400 to-blue-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>Better</span>
-                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>With SwiftCode</span>
+                <h1 className='text-5xl xl:text-6xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight'>
+                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>
+                    Code Faster, 
+                  </span>
+                  <span className='bg-linear-to-r from-blue-400 via-cyan-400 to-blue-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>
+                    Better
+                  </span>
+                  <span className='bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2'>
+                    With SwiftCode
+                  </span>
                 </h1>
+                <p className='text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mg-6 sm:mb-8 slide-in-from-bottom duration-700 delay-200 '>
+                  Accelerate your development workflow with intelligent code completion, automated testing, and smart debugging.  Ship production-ready code 10x faster.
+                </p>
+                
+                <div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300'>
+                  <button className='group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2'>
+                    <span>
+                      Start Coding NOW
+                    </span>
+                    <ArrowRight className='w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300' />
+                  </button>
+
+                  <button className='group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white/10 flex items-center justify-center space-x-2'>
+                    <div className='p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 transition-colors'>
+                      <Play className='w-4 h-4 sm:w-5 sm:h-5 fill-white' />
+                    </div>
+                    <span>Watch Preview</span>
+                  </button>
+                </div>
+
               </div>
               <div className='relative order-2 w-full'>
                 <div className='relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border-white/10'>
