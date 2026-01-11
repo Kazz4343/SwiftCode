@@ -79,7 +79,7 @@ const Hero = () => {
               </div>
               <div className='relative order-2 w-full'>
                 <div className='relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border-white/10'>
-                  <div className='bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-lg overflow-hidden h-70 sm:w-87.5 lg:h-112.5 border border-white/5'>
+                  <div className='bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-lg overflow-hidden h-70 sm:h-87.5 lg:h-112.5 border border-white/5'>
                     {/* IDE header*/}
                     <div className='flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10'>
                       <div className='flex items-center space-x-2'>
