@@ -1,4 +1,4 @@
-@import 'tailwindCSS';
+@import 'tailwindcss';
 
 @layer utilities {
     .animate-in {
