@@ -13,7 +13,7 @@ const Navbar = () => {
              <div className="flex items-center space-x-1 group cursor-pointer">
                 <div>
                     <img 
-                    src='/public/logo.png' 
+                    src='/logo.png' 
                     alt='logo'
                     className="w-12 h-10 sm:w-14 sm:h-12"
                     />
